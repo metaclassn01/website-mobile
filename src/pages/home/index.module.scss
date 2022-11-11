@@ -1,0 +1,69 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  position: relative;
+  background: $theme-bg-color;
+  color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+
+  .loading {
+    position: fixed;
+    left: 0;
+    z-index: 60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 105vh;
+    background: $theme-bg-color;
+    margin-top: -5vh;
+
+    .img {
+      width: 110px;
+      height: 110px;
+      background: url('/images/home/logo.png') no-repeat center center / cover;
+      animation: logoRotate 2s linear;
+    }
+  }
+
+  .namePreLoading {
+    width: 340px;
+    height: 68px;
+    margin-top: 40px;
+    background: url('/images/home/app-name.png') no-repeat center center / cover;
+    mask: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    mask-size: 60% 100%;
+    mask-repeat: no-repeat;
+    animation: maskMove 3.5s infinite linear;
+  }
+
+  .header {
+    background: $theme-bg-color;
+    box-shadow: none;
+  }
+}
+
+@keyframes logoRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes maskMove {
+  0% {
+    mask-position: -200%;
+  }
+  100% {
+    mask-position: 200%;
+  }
+}

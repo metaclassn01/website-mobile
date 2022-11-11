@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 480 130" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path id="path1" d="M480,16.652C480,12.236 478.246,8 475.123,4.877C472,1.754 467.764,0 463.348,0L16.652,0C12.236,0 8,1.754 4.877,4.877C1.754,8 0,12.236 0,16.652L0,113.348C0,117.764 1.754,122 4.877,125.123C8,128.246 12.236,130 16.652,130L463.348,130C467.764,130 472,128.246 475.123,125.123C478.246,122 480,117.764 480,113.348L480,16.652" style="fill:none;"/>
+    <circle id="cricle2" cx="0" cy="0" r="70" style="fill:url(#_makRadial1);">
+        <animateMotion 
+    path="M475.123,125.123C478.246,122 480,117.764 480,113.348L480,16.652C480,7.574 472.426,-0 463.348,-0L16.652,0C7.574,0 -0,7.574 -0,16.652L0,113.348C0,122.426 7.574,130 16.652,130L463.348,130C467.764,130 472,128.246 475.123,125.123"
+         begin="0s" dur="4s" rotate="auto" repeatCount="indefinite"/>
+    </circle>
+    <circle id="cricle1" cx="0" cy="0" r="70" style="fill:url(#_makRadial2);">
+        <animateMotion 
+    path="M4.877,4.877C1.754,8 0,12.236 0,16.652L0,113.348C0,122.426 7.574,130 16.652,130L463.348,130C472.426,130 480,122.426 480,113.348L480,16.652C480,7.574 472.426,0 463.348,0L16.652,0C12.236,0 8,1.754 4.877,4.877"
+         begin="0s" dur="4s" rotate="auto" repeatCount="indefinite"/>
+    </circle>
+    <defs>
+        <radialGradient id="_makRadial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(70,0,0,70,0,0)">
+            <stop offset="0" style="stop-color:black;stop-opacity:1"/>
+            <stop offset="0.46" style="stop-color:black;stop-opacity:0.71"/>
+            <stop offset="1" style="stop-color:black;stop-opacity:0"/>
+        </radialGradient>
+        <radialGradient id="_makRadial2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(70,0,0,70,0,0)">
+            <stop offset="0" style="stop-color:black;stop-opacity:1"/>
+            <stop offset="0.46" style="stop-color:black;stop-opacity:0.71"/>
+            <stop offset="1" style="stop-color:black;stop-opacity:0"/>
+        </radialGradient>
+    </defs>
+</svg>

@@ -1,0 +1,123 @@
+@import 'styles/variables.module.scss';
+
+.priceBox {
+  margin: 0 30px;
+  padding: 60px 0;
+  flex: 1;
+  text-align: center;
+  background: url('/images/rounded_rect_bg2.png') no-repeat center center / 100% 100%;
+  color: #fff;
+
+  .lebel {
+    font-size: 36px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 40px;
+    padding: 0 50px;
+  }
+  .tokenPrice {
+    margin: 8px 0;
+    text-align: center;
+    font-size: 54px;
+    color: $warning-color;
+    line-height: 63px;
+    letter-spacing: 2px;
+    text-shadow: 0px 8px 2px rgba(250, 80, 81, 0.17);
+  }
+
+  .line {
+    margin: 40px 0;
+    width: 690px;
+    opacity: 0.3;
+    border: 2px solid;
+    border-image: linear-gradient(
+        90deg,
+        rgba(0, 150, 255, 0),
+        rgba(56, 247, 255, 1),
+        rgba(56, 247, 255, 1),
+        rgba(0, 150, 255, 0)
+      )
+      2 2;
+  }
+
+  .info {
+    display: flex;
+    .box {
+      position: relative;
+      flex: 1;
+      text-align: center;
+      font-size: 26px;
+      .tokenPrice {
+        font-size: 46px;
+        margin-bottom: 20px;
+      }
+
+      &:not(:last-child) {
+        &::after {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          display: block;
+          content: '';
+          width: 1px;
+          height: 60px;
+          background: #37f7ff;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.sectionTitle {
+  margin: 20px 0 50px;
+}
+
+.contarctAddress {
+  margin-top: 30px;
+  padding: 0 40px;
+  font-size: 34px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 60px;
+  text-align: center;
+  word-break: break-all;
+  color: #00fff6;
+  text-decoration: underline;
+}
+
+.lockupContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px !important;
+  font-size: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 60px;
+
+  .lookupItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    &:nth-child(2):after {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      display: block;
+      width: 1px;
+      height: 50px;
+      background-color: rgba(56, 247, 255, 1);
+      content: '';
+      transform: translateY(-50%);
+      box-shadow: 0 0 16px 2px rgba(56, 247, 255, 0.3);
+    }
+
+    > div:nth-child(2) {
+      color: #ff4871;
+    }
+  }
+}

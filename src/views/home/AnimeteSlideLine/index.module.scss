@@ -1,0 +1,33 @@
+@mixin light-line {
+  position: absolute;
+  top: -50vh;
+  z-index: 2;
+  width: 200px;
+  height: 800px;
+  animation: fall 30s linear infinite;
+  background: url('/images/slide_line.png') no-repeat center center / 200px auto;
+}
+
+.left {
+  left: -90px;
+}
+
+.right {
+  right: -70px;
+}
+
+.container {
+  .line {
+    @include light-line;
+    animation-name: fall;
+  }
+}
+
+@keyframes fall {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    transform: translate3d(0, 900vh, 0);
+  }
+}

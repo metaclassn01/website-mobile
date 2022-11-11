@@ -1,0 +1,43 @@
+@import 'styles/variables.module.scss';
+
+.classrules {
+  .classrulesList {
+    padding: 50px 32px 20px;
+    min-height: 1000px;
+    background: url('/gif/classRules.gif') no-repeat 10px -100px / 100% auto;
+    overflow-x: hidden;
+
+    .item {
+      display: flex;
+      align-items: center;
+
+      .desc {
+        margin-left: 200px;
+        flex: 1;
+        font-size: 34px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 60px;
+      }
+
+      &:nth-of-type(2n) {
+        flex-direction: row-reverse;
+        .desc {
+          margin-left: 0;
+          margin-right: 200px;
+        }
+      }
+      &:nth-child(2) {
+        margin-top: 100px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 120px;
+      }
+
+      &:nth-child(4) {
+        margin-top: 120px;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  min-height: 100vh;
+  padding-bottom: 40px;
+  background: #000d2d;
+  color: #fff;
+
+  .followsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/images/follow_us_bg.png') no-repeat center 40px;
+    background-size: cover;
+    .list {
+      margin-top: 50px;
+      font-size: 34px;
+      text-align: center;
+      font-weight: 600;
+      line-height: 60px;
+    }
+  }
+
+  .contactBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    background: url('/gif/netBack.gif') no-repeat center 20px;
+    background-size: cover;
+
+    .list {
+      margin-top: 30px;
+      font-size: 34px;
+      text-align: center;
+      font-weight: 600;
+      line-height: 60px;
+    }
+  }
+
+  .desc {
+    // user-select: all;
+  }
+
+  .linkBtn {
+    position: relative;
+    width: 504px;
+    height: 104px;
+    margin-top: 150px;
+    text-align: center;
+    color: #42f7ff;
+    font-size: 34px;
+    line-height: 104px;
+    background: url('/images/icon_btn_back.png') no-repeat;
+    background-size: contain;
+    transition: all 0.2s;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

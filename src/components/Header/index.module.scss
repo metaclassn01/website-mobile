@@ -1,0 +1,115 @@
+@import 'styles/variables.module.scss';
+
+$height: 80px;
+
+.fill {
+  width: 100%;
+  height: $height;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 11;
+  width: 100%;
+  min-width: 320PX;
+  max-width: 540PX;
+  background: $theme-bg-color;
+  box-shadow: 0px 8px 24px 0px rgba(48, 158, 173, 0.42);
+  transform: translateX(-50%);
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    height: $height;
+
+    .logo {
+      display: block;
+      width: 280px;
+      height: 50px;
+      text-indent: -9999px;
+      background: url('/images/logo.png') no-repeat center center / 100% 100%;
+    }
+    .right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .lanBtn {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        margin-right: 30px;
+        padding: 0 30px;
+        border-radius: 30px;
+        border: 2px solid $theme-light-color;
+
+        .txt {
+          margin-right: 20px;
+          font-size: 28px;
+          color: $theme-light-color;
+        }
+
+        .triangle {
+          width: 0;
+          height: 0;
+          border: 10px solid;
+          border-color: $theme-light-color transparent transparent transparent;
+          transform: translateY(25%);
+        }
+
+        .lanList {
+          position: absolute;
+          left: 50%;
+          top: 60px;
+          z-index: 6;
+          transform: translateX(-50%);
+          width: 150px;
+          color: #fff;
+          border: 1px solid $theme-light-color;
+          border-radius: 10px;
+          overflow: hidden;
+          .lanItem {
+            background: #000;
+            line-height: 50px;
+            font-size: 20px;
+            text-align: center;
+            &:not(:last-child) {
+              border-bottom: 1px solid $theme-light-color;
+            }
+          }
+        }
+      }
+
+      .menuBtn {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .sidebar {
+    position: absolute;
+    right: 0;
+    top: $height;
+    width: 100%;
+    height: 100vh;
+    background: #082245;
+  }
+
+  .nav {
+    position: absolute;
+    left: 0;
+    top: $height;
+    width: 100%;
+    height: 100vh;
+    background: $theme-bg-color;
+  }
+}

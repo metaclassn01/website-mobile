@@ -1,0 +1,91 @@
+@import 'styles/variables.module.scss';
+
+.stepCircle {
+  overflow: hidden;
+  width: 100%;
+  background: url('/gif/circleBack.gif') no-repeat;
+  background-size: 100% 750px;
+  background-position: bottom;
+  .circle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    margin-top: 60px;
+    background-image: url('/images/back_circle.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: all 2s;
+
+    .serialNum {
+      transition: all 2s;
+      position: absolute;
+      top: -30px;
+      color: #fff;
+      font-size: 44px;
+      font-weight: 600;
+    }
+
+    .content {
+      line-height: 56px;
+
+      p {
+        transition: all 2s;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.activeCircle {
+  animation: test 2s infinite linear;
+  position: relative;
+  .serialNum {
+    scale: 1.2;
+  }
+
+  .content {
+    p {
+      scale: 1.2;
+    }
+  }
+
+  .arrowLeft {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    width: 60px;
+    height: 140px;
+    transform: scaleX(-1);
+  }
+
+  .arrowRight {
+    position: absolute;
+    right: 0;
+    top: -100px;
+    width: 60px;
+    height: 140px;
+  }
+}
+
+@keyframes test {
+  0% {
+    background-image: url('/images/back_circle.png');
+  }
+
+  20% {
+    background-image: url('/images/back_activeCircle.png');
+  }
+
+  100% {
+    background-image: url('/images/back_circle.png');
+  }
+}

@@ -1,0 +1,191 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  min-height: 100vh;
+  background: #000d2d;
+
+  .metaBox {
+    position: relative;
+    height: 1290px;
+    background: url('/images/back_aboutus3.png') no-repeat;
+    background-size: 100% 272px;
+    background-position-y: 1040px;
+    text-align: center;
+
+    .metaDec {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 1240px;
+      margin: 0 20px;
+      background-image: url('/images/back_aboutus1.png');
+      background-size: 100% 100%;
+
+      .dotAnimate {
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        width: 106px;
+        height: 38px;
+        background: url('/images/active_dot.png') no-repeat center center / 106px 38px;
+        animation: leftToRight2 8s infinite linear;
+      }
+
+      .curveAnimate {
+        height: 100px;
+        width: 100%;
+      }
+
+      .describe {
+        padding: 10px 0;
+        text-align: center;
+        font-size: 34px;
+        color: #fff;
+        line-height: 60px;
+      }
+
+      .imgLine {
+        width: 614px;
+        height: 1px;
+        opacity: 0.4;
+        border: 1px solid;
+        border-image: linear-gradient(
+            90deg,
+            rgba(0, 150, 255, 0),
+            rgba(56, 247, 255, 1),
+            rgba(56, 247, 255, 1),
+            rgba(0, 150, 255, 0)
+          )
+          2 2;
+      }
+    }
+  }
+
+  .classTypes {
+    color: #fff;
+    font-size: 34px;
+    overflow: hidden;
+    .classContent {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+
+      .num {
+        font-size: 50px;
+        font-weight: 600;
+      }
+
+      .classDec {
+        margin-top: 20px;
+        line-height: 60px;
+      }
+    }
+    .gifAnimate {
+      width: 100%;
+      height: 60px;
+      background: url('/gif/racetrack.gif') no-repeat;
+      background-size: 100% 100%;
+      animation: leftToRight 8s infinite linear;
+    }
+    .mirror {
+      animation: rightToLeft 8s infinite linear;
+    }
+  }
+
+  .classBackOne {
+    background: url('/gif/neurons.gif') no-repeat;
+    background-size: 300px 300px;
+    background-position: 455px -40px;
+  }
+
+  .classBackTwo {
+    background: url('/gif/neurons.gif') no-repeat;
+    background-size: 300px 300px;
+    background-position: -65px -40px;
+  }
+
+  .classBackThree {
+    background: url('/gif/neurons.gif') no-repeat;
+    background-size: 300px 300px;
+    background-position: 440px -40px;
+  }
+
+  .planBox {
+    position: relative;
+    height: 1364px;
+    background: url('/images/back_aboutus4.png') no-repeat;
+    background-size: 100% 272px;
+    background-position-y: 1100px;
+
+    .metaDec {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 1264px;
+      margin: 20px 20px 0;
+      background-image: url('/images/back_aboutus2.png');
+      background-size: 100% 100%;
+
+      .dotAnimate {
+        position: absolute;
+        left: 0;
+        bottom: 83px;
+        width: 106px;
+        height: 38px;
+        background: url('/images/active_dot2.png') no-repeat center center / 106px 38px;
+        animation: leftToRight2 8s infinite linear;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 63px;
+        letter-spacing: 8px;
+        background: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          #ffffff 49%,
+          rgba(255, 255, 255, 0.43) 72%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .describe {
+        text-align: center;
+        font-size: 34px;
+        color: #fff;
+        line-height: 60px;
+      }
+
+      .imgLine {
+        width: 614px;
+        height: 1px;
+        opacity: 0.4;
+        border: 1px solid;
+        border-image: linear-gradient(
+            90deg,
+            rgba(62, 244, 179, 0),
+            rgba(62, 244, 179, 1),
+            rgba(62, 245, 179, 1),
+            rgba(62, 245, 179, 0)
+          )
+          1 1;
+      }
+    }
+  }
+}
+
+@keyframes leftToRight2 {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: calc(100% - 106px);
+  }
+}

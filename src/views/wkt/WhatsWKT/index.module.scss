@@ -1,0 +1,54 @@
+@import 'styles/variables.module.scss';
+.container {
+  padding-bottom: 280px;
+  margin-bottom: -200px;
+  background: url('/gif/netBack.gif');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+}
+
+.p1 {
+  position: relative;
+  padding: 20px 60px 0;
+  font-size: 34px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 60px;
+  text-align: center;
+  .cell {
+    position: absolute;
+    width: 400px;
+    height: 329px;
+    background-size: cover;
+    background-image: url('/gif/neurons.gif');
+    background-repeat: no-repeat;
+    top: 80px;
+    left: -180px;
+    // z-index: -1;
+    mix-blend-mode: lighten;
+  }
+}
+
+.p2 {
+  @extend .p1;
+  .cell {
+    top: -10px;
+    right: -100px;
+    left: initial;
+  }
+}
+
+.p3 {
+  @extend .p1;
+  .cell {
+    top: -10px;
+  }
+}
+
+.p4 {
+  @extend .p1;
+  .cell {
+    display: none;
+  }
+}

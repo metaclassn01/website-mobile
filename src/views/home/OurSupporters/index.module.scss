@@ -1,0 +1,38 @@
+@import 'styles/variables.module.scss';
+
+.ourSupporters {
+  .list {
+    padding: 60px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -20px;
+
+    .item {
+      position: relative;
+      width: 216px;
+      height: 126px;
+      border-radius: 14px;
+      margin: 0 20px 40px 0;
+      background: #fff;
+      box-shadow: 0px 0px 14px 0px #2af4fb;
+      border: 4px solid #38f6fe;
+    }
+
+    .img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 14px;
+    }
+  }
+
+  .animeteBg {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+  }
+}

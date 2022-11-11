@@ -1,0 +1,11 @@
+export { default as ContactUs } from './ContactUs';
+export { default as Download } from './Download';
+export { default as MainVideo } from './MainVideo';
+export { default as OurGoals } from './OurGoals';
+export { default as OurIntroduction } from './OurIntroduction';
+export { default as OurSupporters } from './OurSupporters';
+export { default as OurTeam } from './OurTeam';
+export { default as Placeholder } from './Placeholder';
+export { default as PlatformSpecialty } from './PlatformSpecialty';
+export { default as Roadmap } from './Roadmap';
+export { default as WKTPrice } from './WKTPrice';

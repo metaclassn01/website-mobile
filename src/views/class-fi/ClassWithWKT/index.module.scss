@@ -1,0 +1,35 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  .itemOuter {
+    margin: 50px 25px;
+  }
+  .itemContainer {
+    padding: 45px 45px 80px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 60px;
+    h1 {
+      margin: 0;
+      color: #38f7ff;
+      font-size: 36px;
+    }
+    .line {
+      width: 614px;
+      height: 1px;
+      margin: 10px 0;
+      opacity: 0.31;
+      border: 2px solid;
+      border-image: linear-gradient(
+          90deg,
+          rgba(62, 245, 179, 0),
+          rgba(62, 245, 179, 1),
+          rgba(62, 245, 179, 1),
+          rgba(62, 245, 179, 0)
+        )
+        2 2;
+    }
+  }
+}

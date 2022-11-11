@@ -1,0 +1,58 @@
+.racetrack {
+  position: absolute;
+  border-radius: 2px;
+}
+
+.defaultType {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, #38F7FF 0%, #000D2D 100%);
+  animation: fadeInLeft 15s infinite;
+}
+
+.leftToRight {
+  animation: fadeInLeft 15s infinite;
+  animation-timing-function: linear;
+}
+
+.rightToLeft {
+  animation: fadeInRight 15s infinite;
+  animation-timing-function: linear;
+}
+
+.leftToRightShort{
+  animation: fadeInLeftShort 25s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 100%;
+  }
+
+}
+
+@keyframes fadeInLeftShort {
+  0% {
+    left: -283px;
+  }
+
+  100% {
+    left: 100%;
+  }
+
+}

@@ -1,0 +1,36 @@
+@import 'styles/variables.module.scss';
+
+.title {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 50px;
+  background: url('/images/sub_title_bg_normal.png') no-repeat center bottom;
+  background-size: cover;
+  mix-blend-mode: lighten;
+
+  &.large {
+    background-image: url('/images/sub_title_bg_large.png');
+    background-position: center bottom -18px;
+  }
+
+  &.normal {
+    background-image: url('/images/sub_title_bg_normal.png');
+  }
+
+  &.small {
+    background-image: url('/images/sub_title_bg_small.png');
+  }
+  p {
+    text-align: center;
+  }
+  .txt {
+    text-align: center;
+  }
+}

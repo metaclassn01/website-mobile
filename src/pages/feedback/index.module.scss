@@ -1,0 +1,132 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 200px;
+  background: #000c2d;
+  color: #fff;
+
+  .fieldBox {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 35px;
+
+    .titleBox {
+      display: flex;
+      align-items: center;
+
+      span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #38f7ff;
+        border-radius: 50%;
+      }
+
+      .label {
+        margin-left: 10px;
+        font-size: 32px;
+        font-weight: 500;
+      }
+    }
+
+
+    .textareaBox {
+      position: relative;
+      height: 365px;
+      margin-top: 16px;
+      padding: 30px 30px 80px;
+      box-sizing: border-box;
+      background: url('/images/back_feedback.png') no-repeat;
+      background-size: 100% 365px;
+
+      textarea {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        color: #fff;
+        font-size: 32px;
+        border: none;
+        outline: none;
+        resize: none;
+      }
+
+      textarea::-webkit-input-placeholder {
+        font-size: 31px;
+        font-weight: 400;
+        color: #fff;
+      }
+
+      .size {
+        position: absolute;
+        bottom: 40px;
+        right: 30px;
+        font-size: 20px;
+        font-weight: 400;
+        z-index: 111;
+      }
+    }
+
+    .inputBox {
+      height: 86px;
+      margin-top: 16px;
+      padding: 0 30px;
+      background: #072243;
+      border-radius: 5px;
+      border: 1px solid;
+      border-image: linear-gradient(90deg, rgba(0, 150, 255, 0), rgba(56, 247, 255, 1), rgba(56, 247, 255, 1), rgba(0, 150, 255, 0)) 1 1;
+
+      input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        color: #fff;
+        font-size: 31px;
+        border: none;
+        outline: none;
+        resize: none;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+
+      input::-webkit-input-placeholder {
+        font-size: 31px;
+        font-weight: 500;
+        color: #768597;
+      }
+    }
+
+    .uploadBox {
+      margin-top: 30px;
+    }
+  }
+
+  .footBox {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    background: #000c2d;
+
+    .linkBtn {
+      position: relative;
+      width: 504px;
+      height: 104px;
+      text-align: center;
+      color: #42f7ff;
+      font-size: 34px;
+      line-height: 104px;
+      background: url('/images/icon_btn_back.png') no-repeat;
+      background-size: contain;
+    }
+  }
+
+}

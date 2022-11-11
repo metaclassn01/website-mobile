@@ -1,0 +1,64 @@
+@import 'styles/variables.module.scss';
+
+.platformSpecialty {
+  position: relative;
+  margin-top: 20px;
+
+  .leftAnimate {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 160px;
+    height: 530px;
+    background: url('/gif/platform_specialty1.gif') no-repeat center center / 100% auto;
+  }
+
+  .rightAnimate {
+    position: absolute;
+    right: 0;
+    bottom: 180px;
+    width: 190px;
+    height: 530px;
+    background: url('/gif/platform_specialty2.gif') no-repeat center center / 100% auto;
+  }
+
+  .specialtyList {
+    padding: 20px 40px;
+    overflow-x: hidden;
+    .item {
+      margin: 40px auto;
+      padding: 16px 30px;
+      font-size: 32px;
+      line-height: 1.4;
+      width: 420px;
+      background: linear-gradient(270deg, hsl(183, 91%, 59%, 0.2) 0%, #000d2d 100%);
+      border-radius: 12px;
+      border: 1px solid #03f8ff;
+
+      &:nth-child(1) {
+        position: relative;
+        left: 60px;
+      }
+
+      &:nth-child(2) {
+        position: relative;
+        left: 20px;
+      }
+
+      &:nth-child(3) {
+        position: relative;
+        left: -10px;
+      }
+
+      &:nth-child(4) {
+        position: relative;
+        left: -20px;
+      }
+
+      &:nth-child(5) {
+        position: relative;
+        left: -60px;
+      }
+    }
+  }
+}

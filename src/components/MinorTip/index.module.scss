@@ -1,0 +1,16 @@
+@import 'styles/variables.module.scss';
+
+.minorTip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $theme-light-color;
+  padding: 0 20px;
+  font-size: 36px;
+  line-height: 1.2;
+  width: 700px;
+  height: 120px;
+  margin: 0 auto;
+  text-align: center;
+  background: url('/images/rounded_rect_bg.png') no-repeat 0 0 / 100% 100%;
+}

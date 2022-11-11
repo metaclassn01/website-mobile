@@ -1,0 +1,83 @@
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+  }
+
+  .itemWrap {
+    transition: all 0.2s;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 316px;
+    height: 240px;
+    text-align: center;
+    background: linear-gradient(132deg, #000c2c 0%, #004255 100%);
+    border-radius: 15px;
+    font-size: 24px;
+    cursor: pointer;
+
+    .thirdLogo {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      width: 66px;
+      height: 100%;
+      transform: translateX(-50%);
+      background: url('/images/icon_window.png') no-repeat center 0 / contain;
+
+      &.iconWin {
+        background-image: url('/images/icon_window.png');
+      }
+
+      &.iconAndroid {
+        background-image: url('/images/icon_android.png');
+      }
+
+      &.iconIos {
+        background-image: url('/images/icon_ios.png');
+      }
+    }
+
+    .txt {
+      position: relative;
+      z-index: 2;
+      margin-top: 130px;
+      font-size: 28px;
+      font-weight: 500;
+      color: #ffffff;
+      line-height: 40px;
+    }
+  }
+
+  .bootTips {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    .pic {
+      position: absolute;
+      right: 35px;
+      top: 35px;
+      width: 509px;
+      height: auto;
+    }
+  }
+}

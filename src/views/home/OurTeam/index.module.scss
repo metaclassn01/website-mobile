@@ -1,0 +1,41 @@
+@import 'styles/variables.module.scss';
+
+.ourTeam {
+  .teamWrap {
+    border-radius: 40px;
+    margin: 20px 45px;
+    box-shadow: 0px 0px 10px 0px rgba(55, 244, 253, 0.8);
+    border: 6px solid $theme-light-color;
+    background: linear-gradient(180deg, #000c2c 0%, #000d2d 10%, rgba(55, 244, 253, 0.4) 100%);
+    padding: 50px 0;
+
+    .title {
+      font-size: 56px;
+      font-weight: 600;
+      color: #38f7ff;
+      line-height: 77px;
+      text-align: center;
+      font-family: AlibabaPuHuiTiB;
+    }
+
+    .line {
+      margin: 30px 0;
+      height: 2px;
+      background: linear-gradient(
+        270deg,
+        rgba(105, 252, 255, 0) 0%,
+        #50f9ff 52%,
+        rgba(56, 247, 255, 0) 100%
+      );
+    }
+
+    .txt {
+      padding: 0 30px;
+      font-size: 34px;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 70px;
+      text-align: center;
+    }
+  }
+}

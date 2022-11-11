@@ -1,0 +1,25 @@
+.chartComponentContainer {
+  position: relative;
+  cursor: crosshair;
+
+  .loadingLayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+
+    img {
+      // @apply mb-2 h-10 w-10 animate-spin fill-primary-theme-color;
+      margin-bottom: 8px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  position: relative;
+
+  .textWrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 50px;
+    .text {
+      position: relative;
+      z-index: 1;
+    }
+    &::before {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      content: '';
+      width: 120px;
+      height: 400px;
+      background: url('/gif/tip_title_bg.gif') no-repeat center center / 100% 100%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      opacity: 0.5;
+    }
+  }
+
+  .line {
+    width: 400px;
+    height: 2px;
+    margin: 20px auto 0;
+    background: linear-gradient(
+      270deg,
+      rgba(105, 252, 255, 0) 0%,
+      #50f9ff 52%,
+      rgba(56, 247, 255, 0) 100%
+    );
+    filter: blur(0px);
+  }
+
+  // .text {
+  //   position: relative;
+  //   // padding: 20px;
+  //   &::after {
+  //     display: block;
+  //     position: absolute;
+  //     z-index: -1;
+  //     content: '';
+  //     width: 140%;
+  //     aspect-ratio: 1 / 1;
+  //     left: 50%;
+  //     top: 50%;
+  //     background: url('/gif/tip_title_bg.gif') no-repeat center center;
+  //     transform: translate(-50%, -50%) rotate(90deg);
+  //   }
+  // }
+}

@@ -1,0 +1,34 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  padding: 30px 20px 0;
+  .card {
+    font-size: 34px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 60px;
+    text-align: center;
+    .title {
+      height: 70px;
+      font-size: 36px;
+      font-weight: 600;
+      color: #42f7ff;
+      line-height: 50px;
+      aspect-ratio: unset;
+      background: transparent;
+      margin-bottom: 30px;
+      .titleContent {
+        padding: 0 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(
+          270deg,
+          rgba(54, 236, 246, 0.15) 0%,
+          rgba(0, 12, 45, 0.15) 51%,
+          rgba(29, 146, 172, 0.15) 100%
+        );
+      }
+    }
+  }
+}

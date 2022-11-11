@@ -1,0 +1,57 @@
+@import 'styles/variables.module.scss';
+
+.ourIntroduction {
+  margin-top: 20px;
+  background: url('/gif/ourIntroduction_bg.gif') no-repeat 0 bottom / 100% auto;
+
+  .introList {
+    padding: 20px 40px;
+    overflow-x: hidden;
+    .introItem {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+
+      .info {
+        display: flex;
+        align-items: center;
+      }
+      .pic {
+        width: 180px;
+        height: auto;
+      }
+
+      .desc {
+        margin-left: 30px;
+        flex: 1;
+        font-size: 34px;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 60px;
+      }
+
+      .line {
+        margin-top: 40px;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(270deg, #38f7ff 0%, #000d2d 100%);
+        border-radius: 2px;
+        animation: leftToRight 8s infinite linear;
+      }
+
+      &:nth-of-type(2n) {
+        .info {
+          flex-direction: row-reverse;
+        }
+        .desc {
+          margin-left: 0;
+          margin-right: 30px;
+          text-align: right;
+        }
+        .line {
+          animation-name: rightToLeft;
+        }
+      }
+    }
+  }
+}

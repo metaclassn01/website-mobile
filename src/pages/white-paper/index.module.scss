@@ -1,0 +1,10 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  background: $theme-bg-color;
+
+  .img {
+    width: 100%;
+    display: block;
+  }
+}

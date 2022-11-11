@@ -1,0 +1,87 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 182px;
+  height: 182px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  background: url('/images/icon_upload_back.png') no-repeat;
+  background-size: contain;
+  .dotAnimate {
+    position: absolute;
+    width: 56px;
+    height: 30px;
+    background: url('/images/active_dot.png') no-repeat center center / 56px 30px;
+    animation: UpAndDownMove 8s infinite linear;
+  }
+  .image {
+    position: absolute;
+    width: 125px;
+    height: 130px;
+    border-radius: 20px;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+
+  .wrap {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    .iconPlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+@keyframes UpAndDownMove {
+  0% {
+    transform: translate3d(-50px, 67px, 0);
+    opacity: 1;
+  }
+  35% {
+    transform: translate3d(40px, 67px, 0);
+    opacity: 1;
+  }
+  40% {
+    transform: translate3d(50px, 67px, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(50px, -67px, 0);
+    opacity: 0;
+  }
+  52% {
+    transform: translate3d(45px, -67px, 0);
+    opacity: 1;
+  }
+  85% {
+    transform: translate3d(-40px, -67px, 0);
+    opacity: 1;
+  }
+  90% {
+    transform: translate3d(-50px, -67px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(-45px, 65px, 0);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.dotContainer {
+  position: relative;
+  width: 300px;
+  margin: 100px auto;
+  .dot {
+    width: 50px;
+    height: 10px;
+    /* border-radius: 50%; */
+    /* background-color: blue; */
+    background: url("./dot.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+    top: -5px;
+    left: -25px;
+  }
+}

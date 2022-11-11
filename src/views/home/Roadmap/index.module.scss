@@ -1,0 +1,72 @@
+@import 'styles/variables.module.scss';
+
+$gap: 20px;
+
+.roadmap {
+  .roadmapList {
+    padding: 50px 32px 20px;
+    min-height: 1400px;
+    background: url('/gif/roadmap.gif') no-repeat 10px -100px / 100% auto;
+    overflow-x: hidden;
+
+    .item {
+      display: flex;
+      align-items: center;
+
+      .month {
+        width: 166px;
+        height: 138px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 28px;
+        color: #ffffff;
+        line-height: 43px;
+        // border: 1px solid #fff;
+      }
+
+      .desc {
+        margin-left: $gap;
+        width: 455px;
+        font-size: 34px;
+        color: #ffffff;
+        font-weight: 600;
+        line-height: 48px;
+      }
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+        .desc {
+          margin-left: 0;
+          margin-right: $gap;
+          text-align: right;
+        }
+      }
+
+      &:nth-child(1) {
+        // margin-top: 24px;
+      }
+
+      &:nth-child(2) {
+        margin-top: 80px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 80px;
+      }
+
+      &:nth-child(4) {
+        margin-top: 90px;
+      }
+
+      &:nth-child(5) {
+        margin-top: 80px;
+      }
+
+      &:nth-child(6) {
+        margin-top: 84px;
+      }
+    }
+  }
+}

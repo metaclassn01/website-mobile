@@ -1,0 +1,49 @@
+.container {
+  position: relative;
+  background: url('/images/light_arc.png') no-repeat center center / 100% 100%;
+
+  .arc {
+    height: 549px;
+    filter: url(#3DF3B0);
+  }
+  .activeDot {
+    position: absolute;
+    top: -5px;
+    left: -11px;
+    width: 60px;
+    height: 30px;
+    background: url('/images/active_dot.png') no-repeat center center / 100% 100%;
+  }
+  &.reverse {
+    transform-origin: center center;
+    transform: rotate(180deg) translateY(15px);
+  }
+}
+
+.cardContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0;
+  .arcItem {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    &:nth-child(2) {
+      right: 0;
+      transform: rotate(180deg) translateY(calc(12px + 50%));
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 10;
+    padding: 0 50px;
+    font-size: 34px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 60px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,31 @@
+@import 'styles/variables.module.scss';
+
+.container {
+  .itemOuter {
+    margin: 50px 25px;
+  }
+  .itemContainer {
+    padding: 45px 45px 80px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 60px;
+    h1 {
+      margin: 0;
+      font-size: 50px;
+      font-weight: bold;
+      line-height: 63px;
+      letter-spacing: 8px;
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #ffffff 49%,
+        rgba(255, 255, 255, 0.43) 72%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

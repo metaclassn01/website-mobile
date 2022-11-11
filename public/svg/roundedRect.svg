@@ -1,0 +1,86 @@
+<svg
+  viewBox='0 0 712 135'
+  version='1.1'
+  xmlns='http://www.w3.org/2000/svg'
+  xmlnsXlink='http://www.w3.org/1999/xlink'
+>
+  <defs>
+    <filter
+      x='-1.9%'
+      y='-10.7%'
+      width='103.7%'
+      height='121.5%'
+      filterUnits='objectBoundingBox'
+      id='filter-1'
+    >
+      <feOffset
+        dx='0'
+        dy='0'
+        in='SourceAlpha'
+        result='shadowOffsetOuter1'
+      ></feOffset>
+      <feGaussianBlur
+        stdDeviation='3'
+        in='shadowOffsetOuter1'
+        result='shadowBlurOuter1'
+      ></feGaussianBlur>
+      <feColorMatrix
+        values='0 0 0 0 0.219607843   0 0 0 0 0.968627451   0 0 0 0 1  0 0 0 1 0'
+        type='matrix'
+        in='shadowBlurOuter1'
+        result='shadowMatrixOuter1'
+      ></feColorMatrix>
+      <feMerge>
+        <feMergeNode in='shadowMatrixOuter1'></feMergeNode>
+        <feMergeNode in='SourceGraphic'></feMergeNode>
+      </feMerge>
+    </filter>
+    <linearGradient
+      x1='-1.05760638e-05%'
+      y1='49.9999894%'
+      x2='99.9999894%'
+      y2='50.0000106%'
+      id='linearGradient-2'
+    >
+      <stop stopColor='#0096FF' stopOpacity='0' offset='0%'></stop>
+      <stop stopColor='#38F7FF' offset='23.3662373%'></stop>
+      <stop stopColor='#38F7FF' offset='76.6486118%'></stop>
+      <stop stopColor='#0096FF' stopOpacity='0' offset='100%'></stop>
+    </linearGradient>
+  </defs>
+  <g
+    id='移动官网'
+    stroke='none'
+    strokeWidth='1'
+    fill='none'
+    fillRule='evenodd'
+  >
+    <g id='图表备份' transform='translate(-983.000000, -1394.000000)'>
+      <g id='编组-7' transform='translate(990.000000, 1401.000000)'>
+        <g id='编组-3备份' filter='url(#filter-1)'>
+          <g id='编组-5备份-2'>
+            <g id='编组-2备份-3'>
+              <path
+                d='M14,0 L684,0 C691.731986,-1.42034288e-15 698,6.2680135 698,14 L698,107 C698,114.731986 691.731986,121 684,121 L14,121 C6.2680135,121 9.46895252e-16,114.731986 0,107 L0,14 C2.60581843e-15,6.2680135 6.2680135,1.42034288e-15 14,0 Z'
+                id='Mask'
+                stroke='#38F7FF'
+                strokeWidth='2'
+              ></path>
+              <path
+                d='M0,14 L0,107 C4.49960893e-15,114.731986 6.2680135,121 14,121 L684,121 C691.731986,121 698,114.731986 698,107 L698,14 C698,6.2680135 691.731986,-1.42034288e-15 684,0 L14,0 C6.2680135,1.42034288e-15 -9.46895252e-16,6.2680135 0,14 Z'
+                class='roundedRectPath'
+              ></path>
+              <path
+                d='M14,10 L684,10 C691.731986,10 698,16.2680135 698,24 L698,97 C698,104.731986 691.731986,111 684,111 L14,111 C6.2680135,111 9.46895252e-16,104.731986 0,97 L0,24 C2.60581843e-15,16.2680135 6.2680135,10 14,10 Z'
+                id='Mask'
+                stroke='url(#linearGradient-2)'
+                strokeWidth='2'
+                opacity='0.198346657'
+              ></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

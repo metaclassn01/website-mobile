@@ -1,0 +1,45 @@
+.container {
+  :global {
+
+    // 重置裁剪样式
+    .cropper {
+      &-view-box {
+        outline: 1px solid #fff;
+        outline-color: #fff;
+      }
+
+      &-point {
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        opacity: 1;
+
+        &.point-ne {
+          border-top: 4px solid #fff;
+          border-right: 4px solid #fff;
+        }
+
+        &.point-nw {
+          border-top: 4px solid #fff;
+          border-left: 4px solid #fff;
+        }
+
+        &.point-sw {
+          border-bottom: 4px solid #fff;
+          border-left: 4px solid #fff;
+        }
+
+        &.point-se {
+          width: 40px;
+          height: 40px;
+          border-right: 4px solid #fff;
+          border-bottom: 4px solid #fff;
+        }
+
+        &.point-se::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
